@@ -1,0 +1,7 @@
+{{#if inputIsActive}}
+	{{input value=value action="toggleInput" blur="toggleInput"}}
+{{else}}
+	<button {{action "toggleInput"}}>
+		{{value}}
+	</button>
+{{/if}}
