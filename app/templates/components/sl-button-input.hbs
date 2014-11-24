@@ -1,7 +1,7 @@
 {{#if inputIsActive}}
-	{{sl-focus-input value=value focus-out="toggleInput"}}
+	{{sl-focus-input class="sl-button-input__input" value=value focus-out="toggleInput"}}
 {{else}}
-	<button {{action "toggleInput"}}>
+	<button class="sl-button-input__button" {{action "toggleInput"}}>
 		{{value}}
 	</button>
 {{/if}}
